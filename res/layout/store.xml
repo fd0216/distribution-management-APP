@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/DeliverRel"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        >
+        <RelativeLayout
+            android:id="@+id/DeliverManRel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:gravity="center_vertical" >
+            <TextView
+                android:id="@+id/Deliver_man_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="送货人"
+                android:textColor="#000"
+                android:textSize="17sp" />
+            <EditText
+                android:id="@+id/Deliver_man_edit"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+           
+                android:layout_marginLeft="20dip"
+                android:layout_toRightOf="@id/Deliver_man_text"
+                
+                android:textSize="15sp" />
+             <TextView
+                android:id="@+id/Shop_no_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="店铺号"
+                android:textColor="#000"
+                android:layout_toRightOf="@id/Deliver_man_edit"
+                android:textSize="17sp" />
+             <EditText
+                android:id="@+id/Shop_no_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"            
+                android:layout_marginLeft="20dip"          
+                android:layout_toRightOf="@id/Shop_no_text"
+                android:textSize="15sp" />          
+              <TextView
+                android:id="@+id/Deliver_phone_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="联系方式"
+                android:textColor="#000"
+                android:layout_below="@+id/Deliver_man_text"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/Deliver_phone_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Deliver_man_edit"
+                android:layout_below="@+id/Deliver_man_edit"
+                android:layout_toRightOf="@id/Deliver_phone_text"
+                android:inputType="number"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+       <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+         <TextView
+                android:id="@+id/user_no_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"          
+                android:text="用户号"   
+                android:padding="8dp" 
+                android:textSize="15sp"
+                android:textColor="#000"              
+               />       
+                 <Spinner  
+                 android:id="@+id/spinner_customer"  
+                 android:layout_width="wrap_content"  
+                 android:layout_height="wrap_content"     
+                 android:textColor="#000"               
+                />  
+    </LinearLayout>
+       <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+       <TextView
+                android:id="@+id/ware_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"          
+                android:text="货物类型"
+                 android:padding="8dp"
+                android:textSize="15sp"
+                android:textColor="#000"              
+               />         
+
+                 <Spinner
+                     android:id="@+id/spinner_ware_type"
+                     android:layout_width="86dp"
+                     android:layout_height="wrap_content" />
+  
+            <TextView
+                android:id="@+id/product_Section_Numbber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"          
+                android:text="款号："
+                 android:padding="8dp"
+                 android:textSize="15sp"
+                  android:textColor="#000"
+               />         
+             <EditText
+                android:id="@+id/product_Section_Number_edit"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"             
+                /> 
+      </LinearLayout>
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+         <TextView
+                android:id="@+id/product_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"          
+                android:text="长(cm)"
+                android:padding="8dp"
+                android:textSize="15sp"
+                android:textColor="#000"
+               
+               />         
+             <EditText
+                android:id="@+id/product_length_edit"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" 
+                android:inputType="number|numberDecimal"            
+                />           
+              <TextView
+                android:id="@+id/prduct_Width_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"          
+                android:text="宽(cm)"
+                 android:textSize="15sp"
+                 android:textColor="#000"
+               />         
+             <EditText
+                android:id="@+id/prduct_Width_edit"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"  
+                 android:inputType="number|numberDecimal"           
+                />
+              <TextView
+                android:id="@+id/prduct_height_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"          
+                android:text="高(cm)"
+                 android:textSize="15sp"
+                 android:textColor="#000"
+               />         
+             <EditText
+                android:id="@+id/prduct_height_edit"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"   
+                android:inputType="number|numberDecimal"          
+                />
+    </LinearLayout>
+     <TableLayout
+          android:id="@+id/table_store"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"       
+           > 
+          <TableRow>
+              <TextView
+                android:id="@+id/product_volume_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"          
+                android:text="体积(㎥)"
+                 android:padding="8dp"
+                 android:textSize="15sp"
+                 android:textColor="#000"
+               />         
+             <EditText
+                android:id="@+id/product_volume_edit"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" 
+                android:editable="false"                         
+                />
+             <TextView
+                android:id="@+id/prduct_nums_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"          
+                android:text="件数"
+                 android:textSize="15sp"
+                 android:textColor="#000"
+               />         
+             <EditText
+                android:id="@+id/prduct_nums_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"             
+                />
+          </TableRow>       
+          <TableRow>
+              <TextView
+                android:id="@+id/product_weight_one_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"          
+                android:text="每件数量"
+                 android:padding="8dp"
+                 android:textSize="15sp"
+                 android:textColor="#000"
+               />         
+
+             <EditText
+                 android:id="@+id/product_weight_one_edit"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:inputType="number" />
+
+             <TextView
+                android:id="@+id/prduct_nums_count_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"          
+                android:text="总数"
+               
+                 android:textSize="15sp"
+                 android:textColor="#000"
+               />         
+             <EditText
+                 android:id="@+id/prduct_nums_count_edit"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:clickable="false" 
+                  android:editable="false"/>
+          </TableRow>
+           <TableRow>
+              <TextView
+                android:id="@+id/product_value_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"          
+                android:text="货值"
+                android:padding="8dp"
+                android:textSize="15sp"
+                android:textColor="#000"
+               />         
+
+             <EditText
+                 android:id="@+id/product_value_edit"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:inputType="number" />
+
+             <TextView
+                android:id="@+id/prduct_weight_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"          
+                android:text="重量"
+                 android:textSize="15sp"
+                 android:textColor="#000"
+               />         
+
+             <EditText
+                 android:id="@+id/prduct_weight_edit"
+                 android:layout_width="100dp"
+                 android:layout_height="wrap_content"
+                 android:inputType="number" />
+
+          </TableRow>
+            <TableRow>
+              <TextView
+                android:id="@+id/product_store_date_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"          
+                android:text="入库日期"
+                 android:padding="8dp"
+                 android:textSize="15sp"
+                 android:textColor="#000"
+               />         
+             <EditText
+                android:id="@+id/product_store_date_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"             
+                />  
+               <TextView
+                android:id="@+id/WareHouse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"          
+                android:text="仓库号"
+                android:textSize="15sp"
+                android:textColor="#000"
+               />         
+             <Spinner
+                android:id="@+id/spinner_ware_house"
+                android:layout_width="86dp"
+                android:layout_height="wrap_content" />
+          </TableRow>
+      </TableLayout>
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <TextView
+        android:id="@+id/prduct_photo_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"          
+        android:text="照片"
+        android:padding="8dp"
+        android:textSize="15sp"
+        android:layout_marginLeft="5dp"
+         android:textColor="#000"
+          />         
+        <ImageView   
+         android:id="@+id/ware_image"  
+         android:layout_height="wrap_content"  
+         android:src="@drawable/ic_launcher"  
+         android:layout_width="wrap_content"/>
+         <Button
+         android:id="@+id/Photo_Get"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="拍照"
+         android:textSize="15dip" />
+         <Button
+         android:id="@+id/Photo_Get_Local"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="浏览"
+         android:textSize="15dip" />
+       </LinearLayout>
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="5dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/store_OK"
+            android:background="@drawable/btn"  
+            android:layout_width="wrap_content"
+            android:layout_height="48dip"   
+            android:text="提交"
+            android:layout_weight="1"       
+            android:textSize="15dip"/>
+        <Button  
+            android:id="@+id/store_to_login"            
+            android:background="@drawable/btn"
+             android:layout_width="wrap_content"
+            android:layout_height="48dip"    
+            android:layout_weight="1"         
+            android:text="返回"  
+         />  
+      </LinearLayout>
+</LinearLayout>

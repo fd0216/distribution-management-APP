@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="fill_parent"  
+    android:layout_height="55dip"  
+    android:orientation="horizontal"  
+    android:layout_marginTop="20dip" >  
+       <TextView 
+       android:id="@+id/customer_loginId" 
+       android:layout_width="120dip"  
+        android:layout_height="40dip"  
+        android:textSize="10pt"  
+        android:gravity="center_vertical"  
+         android:layout_marginLeft="10dip" 
+        />
+        <TextView 
+        android:id="@+id/ware_name" 
+        android:layout_width="67dip"  
+        android:layout_height="40dip"  
+        android:textSize="10pt"  
+        android:gravity="center_vertical"  
+           android:layout_toRightOf="@id/customer_loginId" 
+        />
+        <TextView 
+        android:id="@+id/ware_nums" 
+        android:layout_width="67dip"  
+        android:layout_height="40dip"  
+        android:textSize="10pt"  
+        android:gravity="center_vertical" 
+        android:layout_toRightOf="@id/ware_name"  
+        />
+        <CheckBox 
+	    android:id="@+id/cb_selected"
+	    android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:focusable="false"      
+        android:focusableInTouchMode="false"      
+        android:clickable="false"       
+        android:layout_alignParentTop="true"  
+        android:layout_marginRight="5dip"  
+        android:layout_toRightOf="@id/ware_nums"  
+          >            
+         </CheckBox>
+</RelativeLayout>

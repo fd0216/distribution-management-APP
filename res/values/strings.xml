@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LMS</string>
+    <string name="storage">入库</string>
+    <string name="load">装车</string>
+    <string name="account">用户名</string>
+    <string name="pwd">密    码</string>
+    <string name="forglogin_inaccountet_pwd">忘记密码?</string>
+    <string name="title_activity_guide">LMS</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>
